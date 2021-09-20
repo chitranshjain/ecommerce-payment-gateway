@@ -17,6 +17,6 @@ app.get("/", (req, res) => {
 
 app.use("/api", razorpayRoutes);
 
-app.listen(5000, () => {
+app.listen(process.env.PORT || 5000, () => {
   console.log("Server is up and running on port 5000");
 });
